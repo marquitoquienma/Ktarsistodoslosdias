@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ktarsis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    background: #0a0a0a;
+    color: #eaeaea;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ruido/grano */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('https://grainy-gradients.vercel.app/noise.svg');
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+/* contenedor */
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* titulo glitch */
+h1 {
+    font-family: 'Special Elite', monospace;
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 4px;
+    position: relative;
+    color: #fff;
+}
+
+h1::before,
+h1::after {
+    content: "ktarsis";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1::before {
+    color: #ff0055;
+    transform: translate(-2px, -2px);
+    opacity: 0.7;
+}
+
+h1::after {
+    color: #00f0ff;
+    transform: translate(2px, 2px);
+    opacity: 0.7;
+}
+
+/* texto */
+p {
+    font-size: 1.05em;
+    line-height: 1.9;
+    margin-bottom: 22px;
+    color: #d6d6d6;
+}
+
+/* frases clave */
+strong {
+    color: #ffffff;
+}
+
+/* frase destacada */
+.quote {
+    margin: 40px 0;
+    padding-left: 15px;
+    border-left: 2px solid #888;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* agradecimientos */
+.agradecimientos {
+    margin-top: 50px;
+    font-size: 0.95em;
+    opacity: 0.75;
+}
+
+/* firma */
+.firma {
+    margin-top: 50px;
+    text-align: right;
+    font-family: 'Special Elite', monospace;
+    letter-spacing: 1px;
+}
+
+/* efecto hover leve */
+p:hover {
+    color: #ffffff;
+    transition: 0.3s;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>ktarsis</h1>
+
+    <p>¿Somos lo que decimos ser? ¿O solo lo que nos atrevemos a mostrar?</p>
+
+    <p>Decimos sentir muchas cosas, pero no siempre las decimos completas. A veces por miedo al cuestionamiento, a que opinen, o simplemente a que alguien más entre en lo que consideramos “nuestro”. Y ahí empieza todo: en lo que callamos.</p>
+
+    <p>Tengo muchos miedos. El principal, no llegar a cumplir esas metas que alguna vez me prometí de niño. Aunque últimamente me pregunto: ¿esas metas eran realmente mías? ¿O eran ideas que fui adoptando sin darme cuenta?</p>
+
+    <p>Desde pequeños nos preguntan qué queremos ser. Pero casi nadie responde “quiero ser feliz”. Y entonces crecemos creyendo que la felicidad llega después de todo.</p>
+
+    <p><strong>¿Y si la felicidad no es el final, sino el inicio?</strong></p>
+
+    <p>Me gusta vivir el momento. He pasado por experiencias que me han enseñado a entenderme más, sobre todo en esas madrugadas donde la mente no descansa.</p>
+
+    <p>Tengo inseguridades. Muchas. No creo mostrarlas nunca por completo, pero están ahí.</p>
+
+    <p>No todo está en mis manos. No puedo controlar lo que otros sienten, ni si se quedan o se van.</p>
+
+    <p>Hubo momentos donde me culpé por todo. Hoy entiendo que no todo dependía de mí.</p>
+
+    <p>Estoy aprendiendo a soltar. Y eso también duele.</p>
+
+    <p>No sé si existe un cielo o un infierno. Pero el presente… ese sí es real.</p>
+
+    <p><strong>Sé feliz.</strong></p>
+
+    <div class="agradecimientos">
+        <p>A todos los que dejaron algo en mí, incluso si ya no están.</p>
+    </div>
+
+    <div class="quote">
+        Yo te pido que seas fuerte y valiente… — Josué 1
+    </div>
+
+    <div class="firma">
+        Atte. Marquito
+    </div>
+</div>
+
+</body>
+</html>
